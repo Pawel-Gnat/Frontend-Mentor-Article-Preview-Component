@@ -28,7 +28,7 @@ section {
 	width: 326px;
 	margin: 0 auto;
 	border-radius: 10px;
-	overflow: hidden;
+	background-color: #fff;
 }
 
 .image {
@@ -44,7 +44,6 @@ section {
 
 .text-section {
 	padding: 1.875em 2.5em;
-	background-color: #fff;
 }
 
 h1 {
@@ -66,7 +65,6 @@ h1 {
 	align-items: center;
 	height: 63px;
 	padding: 0 1.875em;
-	background-color: #fff;
 }
 
 .avatar {
@@ -110,20 +108,31 @@ h1 {
 	width: 100%;
 	height: 63px;
 	padding: 0 1.875em;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
 	background-color: var(--very-dark-grayish-blue);
-	transition: height 0.5s linear;
+	transition: height 0.5s, opacity 0.5s;
+	opacity: 1;
 }
 
-.non-active {
-	/* display: none; */
+.active {
+	opacity: 0;
 	height: 0px;
 }
 
 .share-section span {
 	text-transform: uppercase;
 	letter-spacing: 0.5em;
-
 	color: var(--grayish-blue);
+}
+
+.share-section img {
+	cursor: pointer;
+	transition: filter 0.5s;
+}
+
+.share-section img:hover {
+	filter: invert(0) sepia(1) saturate(19.7) hue-rotate(144deg) brightness(0.59);
 }
 
 footer {
@@ -132,4 +141,68 @@ footer {
 }
 
 @media (min-width: 768px) {
+	section {
+		display: flex;
+		flex-direction: row;
+		width: 730px;
+	}
+
+	.image {
+		width: 285px;
+		height: 280px;
+	}
+
+	.image img {
+		object-fit: cover;
+	}
+
+	.card-section {
+		width: 445px;
+	}
+
+	.text-section {
+		padding: 3em 4.6em 1em 3em;
+	}
+
+	h1 {
+		font-size: 1.2rem;
+	}
+
+	.text-section p {
+		font-size: 0.8rem;
+	}
+
+	.comment-section {
+		padding: 0 3em;
+	}
+
+	.comment-text {
+		margin-right: 12em;
+	}
+
+	.share-section {
+		bottom: 7em;
+		right: -4.5em;
+		width: max-content;
+		height: max-content;
+		padding: 1em 1.875em;
+		border-radius: 10px;
+	}
+
+	.share-section:after {
+		position: absolute;
+		content: '';
+		bottom: -0.5rem;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		width: 1.5rem;
+		height: 1.5rem;
+		background: var(--very-dark-grayish-blue);
+		transform: rotate(45deg);
+	}
+
+	.share-section img {
+		z-index: 2;
+	}
 }

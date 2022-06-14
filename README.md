@@ -20,7 +20,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Links
 
-- Live Site URL: [Article Preview Component](xx)
+- Live Site URL: [Article Preview Component](https://pawel-gnat.github.io/Frontend-Mentor-Article-Preview-Component/)
 
 ## My process
 
@@ -41,7 +41,7 @@ Below is my thinking process of Java Script code:
 
 ### What I learned
 
-I managed to do this challenge in 7 hours 40 minutes. Adding JavaScript and coding share section took me around 5-6 hours. I learned how to use ::after pseudoclass, changing the color of svgs on hover and I improved my JS skills a little. 
+I managed to do this challenge in 7 hours 40 minutes. Adding JavaScript and coding share section took me around 5-6 hours. I learned how to use ::after pseudoclass, changing the color of svgs on hover and I improved my JS skills a little.
 
 ## Author
 
